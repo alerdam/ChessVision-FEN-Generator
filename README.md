@@ -33,13 +33,10 @@ The project's architecture is a sequential pipeline, designed to process an imag
 
 ## Future Work
 
-* **Unified Model Prediction**: Consolidate multiple tasks— color recognition, piece recognition — into a single model architecture.
-* **Binary CNN Classifier**: Leverage a lightweight CNN trained on binary-encoded piece images (64×64 CSVs) to classify chess pieces with minimal preprocessing. This model complements the grayscale pipeline and enables fast, interpretable predictions from structured binary data.
-
-* **Perspective Correction**: Implement a **Perspective Transform** to correct for skewed or tilted board images, ensuring accurate analysis.  
-* **Live Stream Analysis**: Extend the application to process a live video feed, enabling real-time FEN generation and analysis.  
-* **Move Teller Integration**: Integrate a chess engine to not only identify the board state but also suggest optimal moves, turning the project into an interactive analysis tool.  
-* **Advanced Image Processing**: Enhance board analysis with grid detection (Canny + Hough), piece segmentation (contours or Mask R-CNN), color normalization (CLAHE), and noise reduction (bilateral filtering).
+* **Mobile Integration**: Develop a mobile application to allow users to capture photos or upload screenshots for instant FEN generation on the go.
+* **Engine Integration & Move Suggestion**: Integrate a chess engine (e.g., Stockfish) to provide "Best Move" recommendations and position analysis.
+* **Unified Model Architecture**: Consolidate the piece recognition and color classification tasks into a single, multi-task deep learning model for better performance.
+* **Advanced Computer Vision Methods**: Implement advanced CV techniques, including Perspective Transform for skewed images and enhanced grid detection.
 
 
 ## Prerequisites & Installation
